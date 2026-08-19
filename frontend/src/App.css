@@ -1,0 +1,101 @@
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.passage {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.controls {
+  margin: 1rem 0;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+button.stop {
+  background: #c0392b;
+  color: white;
+}
+
+.status {
+  color: #666;
+}
+
+.status.error {
+  color: #c0392b;
+}
+
+.results {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.transcript {
+  background: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.errors {
+  list-style: none;
+  padding: 0;
+}
+
+.errors li {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background: #eee;
+  margin-right: 0.4rem;
+}
+
+.error-omission .tag { background: #fde8e8; }
+.error-addition .tag { background: #e8f0fe; }
+.error-substitution .tag { background: #fff4e0; }
